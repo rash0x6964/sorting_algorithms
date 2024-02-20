@@ -32,9 +32,9 @@ int partition(int *arr, int low, int high, int size)
 	int j = low;
 
 	(void) size;
-	while (j <= high)
+	while (j < high)
 	{
-		if (arr[j] < pivot)
+		if (arr[j] <= pivot)
 		{
 			i++;
 			if (i != j)
